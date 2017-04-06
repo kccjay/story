@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!--
+This page makes a Mad Lib story. For an example of a similar page, go here:
+
+http://www.redkid.net/madlibs/
+-->
+
+<html>
+<head>
+<title>My MadLib</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<h1>My MadLib</h1>
+
+<div class="data">
+
+    <p class="instructions">Enter a value into each field. Then press 'Make Story' to read the story you made.</p>
+
+    <!--
+    Request that the user type in at least 15 words in the form below. Ask for the
+    words by part of speach (noun, verb, adjective, adverb, proper noun, etc.) You
+    can also ask for things like places. Use field ids like noun1, noun2, verb1, etc.
+
+    Then make a button with the text "Make Story". The Make Story button should call
+    your makeStory() function which gets all of the form data and then builds and
+    displays your finished story.
+    -->
+
+    <form>
+      Your favorite guy name? (captialized) <br> <input type="text" id='ma_name'> <br>
+      2 dight number? <br> <input type="text" id='two_number'> <br>
+      Different 2 dight number? <br> <input type="text" id='difftwo_number'> <br>
+      Color? <br> <input type="text" id='color'> <br>
+      His or her? <br><input type="text" id='sec_gender'> <br>
+      Street do you live on? <br><input type="text" id='street'> <br>
+      Small animal? <br><input type="text" id='animal'> <br>
+      Single dight number? <br> <input type="text" id='one_number'> <br>
+      Ice Cream? <br><input type="text" id='cream'> <br>
+      Day of the week? <br><input type="text" id='day'> <br>
+      Sport? <br><input type="text" id='sport'> <br>
+      Pet name? (captialized) <br><input type="text" id='pet'> <br>
+      He or she? <br><input type="text" id='gender'> <br><br>
+      Action verb? <br><input type="text" id='verb'> <br><br>
+
+
+      <input type="button" onclick="makeStory()" value="Submit Answers">
+    </form>
+
+</div>
+
+<div class="story">
+    <h2 id="title"></h2>
+
+    <p id="paragraph1"></p>
+    <p id="paragraph2"></p>
+
+
+</div>
+
+<!-- don't forget to link to the story_maker.js file here. -->
+<script src="story_maker.js"></script>
+
+</body>
+</html>
