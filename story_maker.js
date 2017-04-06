@@ -27,6 +27,7 @@ function makeStory() {
 
 
     // Display story by putting title & paragraphs into appropriate divs. (3 points)
+    document.getElementById('color').style.backgroundColor = color;
     document.getElementById('title').innerHTML = title;
     document.getElementById('paragraph1').innerHTML = paragraph1;
     document.getElementById('paragraph2').innerHTML = paragraph2;
